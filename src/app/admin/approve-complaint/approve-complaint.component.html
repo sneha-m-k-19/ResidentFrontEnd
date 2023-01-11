@@ -1,0 +1,48 @@
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <br>
+            <h3 style="text-align: center;">COMPLAINT APPROVAL</h3>
+            <form [formGroup]='ApproveForm'>
+                UserName
+                <div class="form-group">
+                    <input type="hidden" formControlName='id' />
+                    <input type="text" class="form-control" formControlName='UserName'
+                        placeholder="Enter the UserName Name" readonly />
+                </div>
+                <br>
+                Apartment Number
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName='ApartmentNumber'
+                        placeholder="Enter the Course Short Name" readonly/>
+                </div>
+                <br>
+                Complaint Title
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName='ComplaintSubject'
+                        placeholder="Enter the Course Short Name" readonly/>
+                </div>
+                <br>
+                Complaint Description 
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName='Complaints'
+                        placeholder="Enter the Course Short Name" readonly/>
+                </div>
+                <br>
+                Status
+                    <div class="form-group">
+                      <select formControlName="Status" class="form-control" id="sel1">                    
+                        <option>Accepted</option>
+                        <option>Rejected</option>
+                      </select>
+                    </div>
+                 
+                    <div class="form-group">
+                    <br>
+                    <button type="submit" (click)="onSubmit()" class="btn btn-danger" rounded="true">Update Status</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    

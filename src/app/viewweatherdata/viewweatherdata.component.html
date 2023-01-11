@@ -1,0 +1,25 @@
+<p>viewweatherdata works!</p>
+<table>
+    <thead>
+        <th>
+            Date
+        </th>
+        <th>
+            Temp
+        </th>
+        <th>
+            Summary
+        </th>
+    </thead>
+    <tr *ngFor="let item of ViewDataArray">
+        <td>
+            {{item.date}}
+        </td>
+        <td>
+            {{item.temperatureC}}
+        </td>
+        <td>
+            {{item.summary}}
+        </td>
+    </tr>
+</table>

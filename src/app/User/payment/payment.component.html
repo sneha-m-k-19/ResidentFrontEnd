@@ -1,0 +1,69 @@
+<section style="background-color:#8fc4b7">
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-4">
+          <div class="card rounded-3">
+            <form [formGroup]='PaymentForm'>
+              <h1 align="center"> Pay HERE</h1>
+            <div class="card-body mx-1 my-2">
+              <div class="d-flex align-items-center">
+                <div>
+                  <i class="fab fa-cc-visa fa-4x text-black pe-3"></i>
+                </div>
+                <div class="d-flex align-items-center pe-3" >
+                    <input type="text" formControlName="UserName" class="form-control form-control-sm" id="UserName"
+                    style="width: 100px;" readonly />                   
+                  </div>
+                  <div class="d-flex align-items-center pe-3" hidden >
+                    <input type="text" formControlName="ApartmentNumber" class="form-control form-control-sm" id="ApartmentNumber"
+                    style="width: 55px;" readonly hidden/>                   
+                  </div>
+                  <div class="d-flex align-items-center pe-3" hidden >
+                    <input type="text" formControlName="Event" class="form-control form-control-sm" id="Event"
+                    style="width: 55px;" readonly hidden/>                   
+                  </div>
+              </div>
+  
+              <div class="pt-3">
+                <div class="d-flex flex-row pb-3">
+                  <div class="rounded border d-flex w-100 px-3 py-2 align-items-center">
+                     <div class="d-flex flex-column py-1">
+                      <p class="mb-1 small text-primary">Amount</p>
+                      <div class="d-flex flex-row align-items-center">
+                        <h6 class="mb-0 text-primary pe-1">₹</h6>
+                        <input type="text" formControlName="Paymentamt" class="form-control form-control-sm" id="numberExample"
+                          style="width: 100px;" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-3">
+                <div class="d-flex flex-row pb-3">
+                  <div class="rounded border d-flex w-100 px-3 py-2 align-items-center">
+                     <div class="d-flex flex-column py-1">
+                      <p class="mb-1 small text-primary">Date</p>
+                      <div class="d-flex flex-row align-items-center">
+                        <input type="date" formControlName="date" class="form-control form-control-sm" id="numberExample"
+                          style="width: 100px;" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="d-flex justify-content-between align-items-center pb-1">
+                <a href="#!" class="text-muted">Go back</a>
+                <button type="submit" (click)="OnSubmit()" class="btn btn-primary btn-lg">Pay amount</button>
+              </div>
+            </div>
+            </form>
+          </div>
+        
+        </div>
+    
+      </div>
+    
+    </div>
+  </section>

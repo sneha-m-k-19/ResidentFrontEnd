@@ -1,0 +1,53 @@
+<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+              class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+              alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Event Registration</h3>
+              <form [formGroup]='EventRegForm' class="px-md-2">
+                <div class="form-outline flex-fill mb-0" hidden>
+                  <input type="text" id="form3Example1c" formControlName="UserName" class="form-control" />
+                </div>
+                <div class="form-outline flex-fill mb-0" hidden>
+                  <input type="text" id="form3Example1c" formControlName="ApartmentNumber" class="form-control" />
+                </div>
+                <div class="form-outline mb-4">
+                  <!--<input type="dropdown" formControlName="Event" placeholder="Event Title" id="form3Example1q" class="form-control" />-->
+                  <div class="form-group">
+                    <label for="sel1">Select Event:</label>
+                    <select formControlName="Event" class="form-control" id="sel1">                    
+                      <option>Birthday Party</option>
+                      <option>Anniversary Party</option>
+                      <option>Retirement Party</option>
+                      <option>marriage Function</option>
+                      <option>Reception</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-outline mb-4">
+                    <textarea type="text" formControlName="EventDetails" placeholder="EventDetails" id="form3Example1q" class="form-control" ></textarea>
+                  </div>
+                  <div class="form-outline mb-4" hidden>
+                    <textarea type="text" formControlName="status" placeholder="EventDetails" id="form3Example1q" class="form-control" ></textarea>
+                  </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline datepicker">
+                        <label for="exampleDatepicker1" class="form-label">Select a Event Date</label>
+                      <input type="date" formControlName="date" class="form-control" id="exampleDatepicker1" />
+                    </div>
+                  </div>   
+                </div>
+                <button type="submit" (click)="OnSubmit()" class="btn btn-success btn-lg mb-1">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

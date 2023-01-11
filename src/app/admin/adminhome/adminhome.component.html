@@ -1,0 +1,46 @@
+<div>
+    <h1>
+        <span class ="tab">    
+        <img src = "../../assets/logooo (1).jpg" height="60">
+         <b>E S I D E N C E<br></b></span>
+    </h1>
+    </div>
+<nav class="navbar navbar-expand-sm bg-primary">
+    <div class="container-fluid ">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/AdminHomePg']">HOME </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/AdminPayment']">ACCOUNT SHEET </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/accounts']">ACCOUNT STATEMENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/apartmentRegister']">APARTMENT REGISTRATION </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/apartmentView']">APARTMENT VIEW </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/familyView']">FAMILY VIEW </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" [routerLink]="['/adminhome/complaint']">COMPLAINT VIEW </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/announcment']">ANNOUNCEMNET SETTING</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/events']">EVENT APPROVAL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Home/Login']">LOGOUT</a>
+            </li>
+      </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>

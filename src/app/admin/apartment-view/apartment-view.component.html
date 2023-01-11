@@ -1,0 +1,29 @@
+<body>
+    <br>
+    <h1 align="center">Apartment List</h1>
+    <br>
+    <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+          <tr>
+            <th> SL Number </th>
+            <th> ApartmentNumber</th>
+            <th> Apartment Name</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Dataarray let i=index" class="table-primary">
+            <td>
+              <div class="d-flex align-items-center">
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">{{i+1}}</p>
+                </div>
+              </div>
+            </td>
+            <td> {{item.apartmentNumber}}</td>
+            <td> {{item.apartmentName}}</td>            
+           <!-- <td><a [routerLink]="['/adminhome/approvecomplaint',item.id]">View Family</a></td>-->
+          </tr>
+          </tbody>
+          </table>
+        </body>

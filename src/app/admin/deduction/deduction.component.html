@@ -1,0 +1,42 @@
+<body><br>
+<h1 align="center">Expense Sheet</h1>
+<section class="gradient-custom">
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-1 col-lg-5 col-xl-4">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-4">
+              <form [formGroup]='DeductionForm'>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label" for="typeText">Event :</label>
+                    <input type="text" formControlName="event" id="typeText" class="form-control form-control-lg" siez="17"
+                      minlength="19" maxlength="19" />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="form-outline">
+                    <label class="form-label"  for="typeName">Amount Used for Perticular Event :</label>
+                    <input type="text" formControlName="paymentamt" id="typeName" class="form-control form-control-lg" siez="17"
+                      />                 
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-outline">
+                    <label class="form-label" for="typeText">Date :</label>
+                    <input type="date" formControlName="date" id="typeText" class="form-control form-control-lg" siez="17"
+                      minlength="19" maxlength="19" />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center pb-2"> 
+                  <button type="submit" (click)="OnSubmit()" class="btn btn-success btn-lg btn-rounded">
+                    Deduct Amount
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+  </section>
+  </body>

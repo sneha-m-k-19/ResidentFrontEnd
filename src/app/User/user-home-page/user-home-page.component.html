@@ -1,0 +1,10 @@
+<body>
+    <br>  
+     <div>
+        <marquee  class ="marque" width="100%" direction="left" height="60px"> 
+            <p *ngFor="let item of Dataarray|slice:-1" class="fw-normal mb-1">Latest Notice : {{item.date}} : {{item.title}} : {{item.subject}}</p>
+            </marquee>
+        </div> 
+        <img src="../../../assets/user-page.png">
+        <h1> W E L C O M E </h1>
+</body>

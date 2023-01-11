@@ -1,0 +1,37 @@
+<body>
+    <br>
+    <h1 align="Center">Family Details</h1>
+    <br>
+    <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+          <tr>
+            <th> SL Number </th>
+            <th> Name</th>
+            <th> Gender</th>
+            <th> Email</th>
+            <th> Phone Number</th>
+            <th> Occupation</th>
+            <th> Date Of Birth</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Dataarray let i=index" class="table-primary">
+            <td>
+              <div class="d-flex align-items-center">
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">{{i+1}}</p>
+                </div>
+              </div>
+            </td>
+            <td>{{item.firstName}} {{item.lastName}}
+            </td>
+            <td> {{item.inlineRadioOptions}}</td>
+            <td> {{item.email}}</td>
+            <td> {{item.phoneNumber}}</td>
+            <td> {{item.occupation}}</td>
+            <td> {{item.dob}}</td>
+            
+          </tr>
+          </tbody>
+          </table>
+    </body>
