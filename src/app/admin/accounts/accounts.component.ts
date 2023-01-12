@@ -10,8 +10,7 @@ import { ResBackEndServiceService } from 'src/app/res-back-end-service.service';
 export class AccountsComponent {
   Dataarray:any[]=[];
   Dataarray2:any[]=[];
-  Dataarray3:any[]=[]
- // Dataarray:any[]=[];
+// Dataarray:any[]=[];
   income:any;
   expense:any;
   balance:any
@@ -37,10 +36,6 @@ export class AccountsComponent {
         for(let i=0;i<res2.length;i++){
           totalincome=totalincome+Number(res2[i].paymentamt)
         }
-        // console.log(totalincome.toString())
-        // console.log(totalExp.toString())
-        // console.log(totalincome-totalExp)
-        // console.log(this.Dataarray3)
         this.income=totalincome.toString()
         this.expense=totalExp.toString()
         this.balance=this.income-this.expense

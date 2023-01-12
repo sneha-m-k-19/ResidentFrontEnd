@@ -12,3 +12,18 @@ body{
     height:900px;
     background-color: #8fc4b7;
 }
+form{
+    margin-left: 100px;
+    width:1350px;
+}
+.parent{
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.inline{
+    display: inline-block;
+    width:33%;
+    height: 100%;
+    padding-right: 3%;
+}

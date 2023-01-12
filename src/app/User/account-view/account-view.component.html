@@ -2,6 +2,19 @@
   <br>
   <h1 align="center">Accounts Details View</h1>
   <br>
+  <form [formGroup]='AccountsviewForm'>
+  <div class="parent" >
+    <div class="inline" >Total Income
+    <input type="text" [(ngModel)]="income" formControlName="Totalincome"  form id="form3Example1cg"  class="form-control form-control-lg" readonly/>
+    </div>
+    <div class="inline" >Total Expense
+      <input type="text" [(ngModel)]="expense" formControlName="Totalexpense" form id="form3Example1cg" class="form-control form-control-lg" readonly />                
+    </div> 
+    <div class="inline" >Balance
+      <input type="text" [(ngModel)]="balance" formControlName="balance" form id="form3Example1cg" class="form-control form-control-lg" readonly/>                
+    </div>              
+  </div>
+  </form>
   <h1 align="center">Expense</h1><br>
   <table class="table align-middle mb-0 bg-white">
       <thead class="bg-light">
