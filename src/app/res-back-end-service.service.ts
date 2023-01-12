@@ -19,7 +19,7 @@ export class ResBackEndServiceService {
   }
   insertcomplaintdata(data: any) {
 
-    this.http.post("https://localhost:7168/api/Complaint/InsertComplaint", data).toPromise().then(result => { alert("Complaint Registerd Successfully ") })
+    this.http.post("https://localhost:7168/api/Complaint/InsertComplaint", data).toPromise().then(result => { alert("Complaint Registerd Successfully ") ,window.location.href='/userhome/complaintstatus' })
 
   }
   login(loginInfo: Array<string>) {
@@ -33,7 +33,7 @@ export class ResBackEndServiceService {
   }
   inserteventdata(data: any) {
 
-    this.http.post("https://localhost:7168/api/Event/insertEvent", data).toPromise().then(result => { alert("Event Requested Successfully ") })
+    this.http.post("https://localhost:7168/api/Event/insertEvent", data).toPromise().then(result => { alert("Event Requested Successfully "),window.location.href='/userhome/eventstatus' })
 
   }
 
