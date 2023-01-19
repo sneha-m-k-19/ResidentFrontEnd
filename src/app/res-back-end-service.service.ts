@@ -117,4 +117,13 @@ export class ResBackEndServiceService {
   {
     return this.http.get<any>('https://localhost:7168/api/Family/ViewFamily')
   }
+  insertPaneldata(data: any) {
+
+    this.http.post("https://localhost:7168/api/Panel/insertPanel", data).toPromise().then(result => { alert("Panel Data Update "),location.reload(); })
+
+  }
+  getPanelData()
+  {
+    return this.http.get<any>('https://localhost:7168/api/Panel/ViewPanel')
+  }
 }

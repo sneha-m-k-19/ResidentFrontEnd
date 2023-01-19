@@ -1,0 +1,68 @@
+<section class="vh-100 bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">ADMIN PANEL</h2>
+              <form [formGroup]='PanelForm'>
+                <div class="form-outline mb-4">
+                    <input type="date" formControlName="date" form id="form3Example1cg" class="form-control form-control-lg" />                
+                  </div>
+                <label>President Name :</label>
+                <div class="form-outline mb-4">
+                    <input type="text" placeholder="Enter President Name" formControlName="President" form id="form3Example1cg" class="form-control form-control-lg" />                
+                  </div>
+                  <label>Secretary Name :</label>
+                <div class="form-outline mb-4">
+                    <input type="text" placeholder="Enter Secretary Name" formControlName="Secretary" form id="form3Example1cg" class="form-control form-control-lg" />                
+                  </div>
+                  <label>Treasurer Name :</label>
+                  <div class="form-outline mb-4">
+                      <input type="text" placeholder="Enter Tresurer Name" formControlName="Treasurer" form id="form3Example1cg" class="form-control form-control-lg" />                
+                    </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" (click)="OnSubmit()" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <h1 align="center">Panel Information</h1>
+        <br>
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th> SL Number </th>
+                <th> Date</th>
+                <th> President</th>
+                <th> Secretary</th>
+                <th> Treasurer</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Dataarray let i=index" class="table-primary">
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">{{i+1}}</p>
+                    </div>
+                  </div>
+                </td>
+                <td> {{item.date}}</td>
+                <td> {{item.president}}</td>  
+                <td> {{item.secretary}}</td>  
+                <td> {{item.treasurer}}</td>            
+               <!-- <td><a [routerLink]="['/adminhome/approvecomplaint',item.id]">View Family</a></td>-->
+              </tr>
+              </tbody>
+              </table> 
+      </div>
+      
+    </div>
+  </div>
+</section>

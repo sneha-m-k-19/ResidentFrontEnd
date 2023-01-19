@@ -6,5 +6,24 @@ background-color:#8fc4b7;
 body img
 {
     margin-left: 30%;
-    margin-top: 8%;
 }
+.family{
+    margin-left: 20px;
+}
+.parent{
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-left: 10px;
+}
+.inline{
+    display: inline-block;
+    width:15%;
+    height: 100%;
+    
+}
+input{
+    text-align: center;
+    color: navy;
+  }
+  

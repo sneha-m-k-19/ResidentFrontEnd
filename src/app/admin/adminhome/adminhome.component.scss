@@ -16,7 +16,7 @@ nav a{
  font-family:Arial;
  color:#f2f2f2;
  text-align:center;
- font-size:15px ;
+ font-size:16px ;
  }
  nav{
     width:100%;
@@ -25,4 +25,16 @@ nav a{
 }
 .tab {
     display: inline-block;
-    margin-left: 550px;}
+    margin-left: 550px;
+}
+.parent{
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-left: 10px;
+}
+.inline{
+    display: inline-block;
+    width:15%;
+    height: 100%;
+}       

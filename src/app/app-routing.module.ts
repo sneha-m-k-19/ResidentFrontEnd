@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { AccountsComponent } from './admin/accounts/accounts.component';
 import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
 import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.component';
+import { AdminpanelComponent } from './admin/adminpanel/adminpanel.component';
 import { AnnouncementComponent } from './admin/announcement/announcement.component';
 import { ApartmentFamilyViewComponent } from './admin/apartment-family-view/apartment-family-view.component';
 import { ApartmentRegisterComponent } from './admin/apartment-register/apartment-register.component';
@@ -19,6 +20,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
+import { PanelComponent } from './panel/panel.component';
 import { AccountViewComponent } from './User/account-view/account-view.component';
 import { ComplaintStatusComponent } from './User/complaint-status/complaint-status.component';
 import { CompliantRegComponent } from './User/compliant-reg/compliant-reg.component';
@@ -38,12 +40,14 @@ const routes: Routes = [{path:'ViewData',component:ViewweatherdataComponent},
   children:[{path:'HomePage',component:HomepageComponent},
   {path:'About',component:AboutComponent},
   {path:'Gallery',component:GalleryComponent},
-  {path:'Login',component:LoginComponent},]},
+  {path:'Login',component:LoginComponent},
+  {path:'Panel-Members',component:PanelComponent},]},
   {path:'',redirectTo:'/Home/Login',pathMatch:'full'},
 
  
 {path:'adminhome',component:AdminhomeComponent,canActivate:[AuthenticationfilterGuard],
 children:[{path:'AdminHomePg',component:AdminhomepageComponent},
+{path:'adminpanel',component:AdminpanelComponent},
 {path:'AdminPayment',component:DeductionComponent},
 {path:'accounts',component:AccountsComponent},
 {path:'announcment',component:AnnouncementComponent},

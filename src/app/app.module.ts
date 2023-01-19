@@ -33,6 +33,9 @@ import { EventViewComponent } from './User/event-view/event-view.component';
 import { FamilyDetailsComponent } from './User/family-details/family-details.component';
 import { ApartmentViewComponent } from './admin/apartment-view/apartment-view.component';
 import { ApartmentFamilyViewComponent } from './admin/apartment-family-view/apartment-family-view.component';
+import { AdminpanelComponent } from './admin/adminpanel/adminpanel.component';
+import { PanelComponent } from './panel/panel.component';
+
 
 @NgModule({
   declarations: [
@@ -66,6 +69,9 @@ import { ApartmentFamilyViewComponent } from './admin/apartment-family-view/apar
     FamilyDetailsComponent,
     ApartmentViewComponent,
     ApartmentFamilyViewComponent,
+    AdminpanelComponent,
+    PanelComponent,
+  
    
   ],
   imports: [

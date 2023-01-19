@@ -1,3 +1,57 @@
 <body align="center">
     <img class='img' src="../../../assets/admin.png" >
+    <br>
+    <form [formGroup]='dashviewForm'>
+    <div class="parent" >&nbsp; 
+        <div class="inline card col-lg-2">
+            <div class="card-header"><h4 align="center">Apartment</h4></div>
+            <div class="card-body" align="center">
+              <p>Total No.of Apartment</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="apartment" formControlName="apartment" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a [routerLink]="['/adminhome/apartmentView']" class="btn btn-primary">View Details</a>
+            </div>
+          </div>&nbsp; &nbsp; 
+          <div class="inline card col-lg-2">
+            <div class="card-header"><h4 align="center">Complaint</h4></div>
+            <div class="card-body" align="center">
+              <p>No of Unhandled Complaints</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="complaint" formControlName="complaint" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a  [routerLink]="['/adminhome/complaint']" class="btn btn-primary">View Details</a>
+            </div>
+          </div> &nbsp; &nbsp; 
+          <div class="inline card col-lg-2">
+            <div class="card-header"><h4 align="center">Events Requests</h4></div>
+            <div class="card-body" align="center">
+              <p>No of Unhandled Events</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="event" formControlName="event" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a [routerLink]="['/adminhome/events']" class="btn btn-primary">View Details</a>
+            </div>
+          </div>  &nbsp;  &nbsp;  
+          <div class="inline card col-lg-2">
+            <div class="card-header"><h4 align="center">Total Income</h4></div>
+            <div class="card-body" align="center">
+              <p>Total amount erned</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="income" formControlName="income" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a [routerLink]="['/adminhome/accounts']" class="btn btn-primary">View Details</a>
+            </div>
+          </div> &nbsp; &nbsp; 
+          <div class="inline card col-lg-1">
+            <div class="card-header"><h4 align="center">Total Expense</h4></div>
+            <div class="card-body" align="center">
+              <p>Total amount withdrawal</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="expense" formControlName="expense" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a [routerLink]="['/adminhome/accounts']" class="btn btn-primary">View Details</a>
+            </div>
+          </div>&nbsp;  &nbsp;   
+          <div class="inline card col-lg-2">
+            <div class="card-header"><h4 align="center">Balance</h4></div>
+            <div class="card-body" align="center">
+              <p>Amount In hand</p>
+              <h5 class="card-title"><input type="text" [(ngModel)]="balance" formControlName="balance" form id="form3Example1cg"  class="form-control form-control-lg" readonly/></h5>
+              <a [routerLink]="['/adminhome/accounts']" class="btn btn-primary">View Details</a>
+            </div>
+          </div> 
+      </div>
+    </form>
+    
 </body>
